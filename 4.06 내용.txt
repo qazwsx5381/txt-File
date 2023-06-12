@@ -1,0 +1,17 @@
+
+	R	G	B
+# 	0	0	0	검은색	(#000)
+#	00	00	00	검은색	(#000000)
+#	f	f	f	흰색	(#FFF)
+#	ff	ff	ff	흰색	(#FFFFFF)
+
+color picker	ctrl+alt+k  	색상선택
+
+justify-content 주축
+align-items 
+
+
+아시아권
+비아시아권
+
+; ← 엔터

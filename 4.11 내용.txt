@@ -1,0 +1,19 @@
+alert() 확인창
+
+confirm() 선택창
+
+prompt() 입력창
+
+typeof = 문자 구분
+
+① boolean	디지털		true or false	1 or 0
+
+② number	아날로그		1 ~ ∞ (실수 범위)
+
+③ string		a,b,c,d,~		'apple'		'사과'	'1333' , 'a45'	데이터 타입이 전부 다르다.
+
+④ undefined	정해지지 않은 값
+
+script
+
+javascript ES6

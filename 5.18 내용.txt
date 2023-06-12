@@ -1,0 +1,13 @@
+선택자
+
+querySelector('    ')
+querySelectorAll('    ')		Nodelist 이름의 유사배열
+
+getElementBy시리즈
+getElementBy
+getElementBys			HTMLCollection 이름의 유사배열	forEach 사용불가, .length 사용가능
+
+
+1. input으로 숫자(달러)를 입력받아서
+2. 환전버튼을 클릭하면
+3. 달러로 변환해서 출력주기.

@@ -1,0 +1,12 @@
+HTML의 목적
+정보를 어떻게 효과적으로 전달하는가? → 현재는 디자인까지
+
+html → 버전은 5까지 나옴
+
+<시작>		<끝> / : 태그를 닫는 역할
+<html>
+<head></head>
+<body></body>
+</html>
+
+w3c : world wide web consortium

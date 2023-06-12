@@ -1,0 +1,21 @@
+input 은 문자열(string)로 받아들임
+
+1,2,3,4,5, number??? ----> string
+true ? boolean???? -----> string
+true ==> true
+false ==> true
+'' ==> false
+
+string 기준에서는 1글자라도 적으면 true로 인식
+
+디지털 : 0 or 1 / 0 아니면 전부 true로 인식
+
+
+String()		((아무거나)+"")
+Number()		((아무거나) +, -, *, / 1)
+Boolean()		!!(아무거나)
+
+prompt 로 입력받으면 String으로 인식
+confirm 으로 입력받으면 Boolean으로 인식
+
+

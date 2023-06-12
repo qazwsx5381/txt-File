@@ -1,0 +1,33 @@
+array : index
+배열 : 목자 / 인덱스
+
+
+
+길이 / length
+
+
+선입선출	FIFO	First In First Out	큐
+후입선출	LIFO	Last In First Out	스택
+
+
+1. 다음 중 제거하고 싶은 품목을 입력하세요.
+
+prompt('배')라고 입력하면
+
+document.write 로 웹페이지로 표현
+
+
+조건문
+if, switch, else if~
+
+반복문
+for
+while
+
+for( let i=0; i<1000; i++)
+
+console.log에 50까지 증가할때
+일반은 흰색
+3의 배수 빨간색
+5의 배수 초록색
+둘이 만나면 파란색

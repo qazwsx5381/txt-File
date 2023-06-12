@@ -1,0 +1,57 @@
+localhost = 127.0.0.1
+
+justify-content = 주축(가로축)
+start (default)
+end
+center
+space-between	요소들 사이를 동일한 간격으로
+space-around	요소들 주위를 동일한 간격으로 
+space-evenly	요소들 사이(공백 중복)를 동일한 간격
+
+align-items = 교차축(세로축)
+start 
+end
+center
+baseline		요소들을 시작위치에 정렬
+stretch (default)	요소들을 창에 맞도록 늘림
+
+flex-direction = 방향 설정
+row (→ / default), row-reverse (←), column(↓), column-reverse(↓)
+
+.yellow {
+	order: 1; 
+	} = yellow 클래스의 위치를 +1만큼 변경 / 음수 사용가능 / default : 0
+
+align-self = 해당 클래스를 별도로 지정하여 align-item 속성을 적용 / align-items 값을 무시함.
+
+flex-wrap
+nowrap (default) : 모든 요소를 한 줄에 정렬
+wrap : 요소들을 여러 줄에 걸쳐 정렬
+wrap-reverse : 요소들을 여러 줄에 걸쳐 반대로 정렬
+#flex-direction과 flex-wrap은 flex-flow: row wrap; 같이 한 줄로 표현 가능
+
+align-content = 요소들이 여러 줄로 표현돼있을 때 사용가능, 한 줄로 표기돼있으면 나타나지 않음.
+start
+stop
+center
+space-between
+space-around
+stretch (default)
+
+
+100vh	height
+100vw	width
+
+1920*1080 해상도 기준
+100vw = 1920px
+100vh = 1080px
+
+1. static 고정(정적인, 기본)
+
+2. fixed 화면고정
+
+3. relative : 형제관계일 때, relative는 static을 기준으로 이동
+
+4. 자식은 부모의 영향을 받음(위치, 투명도 등)
+
+5. absolute : 가장 가까운 부모요소에게 반응

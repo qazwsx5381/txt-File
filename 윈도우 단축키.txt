@@ -1,0 +1,39 @@
+win + pausebreak : 시스템(윈도우 버전 확인, 내 컴퓨터 확인)
+
+win + S : 검색기능
+win + E : 파일탐색기 실행
+win + M : 창 최소화
+win + D : 바탕화면
+win + L : 로그오프
+win + V : 클립보드(지금까지 복사했던 내용 확인가능)
+win + 화살표 : 창이동
+win + . : 이모티콘😊😂🤣❤😍😒👌😘💕😁
+ㅁ(자음) + 한자
+win + R : 실행(cmd, notepad, mspaint, calc...)
+win + shift + s : 화면캡쳐
+win + P : 외부모니터
+
+원노트
+
+cmd 명령어
+ipconfig : ip주소 확인
+ping 000.000.000.000 or ping www.naver.com : ping 테스트(물리적 연결 확인)
+
+
+ctrl + 마우스 휠 : 확대 축소
+ctrl + 0 : 100%로 복귀
+ctrl + alt + delete
+ctrl(L) + shift(L) + esc : 작업관리자
+
+; : 구분하기
+
+
+V8 → 서버
+
+node.js
+
+
+
+
+
+
