@@ -37,9 +37,17 @@ git init ( 초기화 )
 git status ( 상태 확인 )
 git add -A (.A) ( staging 하기(업로드 준비) / LF 이슈가 있어 CRLF로 바꿔주기 )
 git commit -A
-git log ( commit이 제대로 되었는지 확인 )
 git remote add origin https://github.com/qazwsx5381/mevn.git
 git push --set-upstream origin main // 안 될 경우 1)로
+git log ( 로그 보기 )
+git branch ( 이름 )
+git checkout ( 해시코드 8자리 ) or HEAD -( 숫자 / 1은 1단계 전으로, 2는 2단계 전으로 )
+git reset ( 삭제 되돌림 )
+git revert ( 초기화 내역 포함 되돌림 )
+git checkout --oneline ( log 내역을 한줄로 )
+git checkout --graph
+
+
 
 //트러블 슈팅!
 1)안 될 경우 아이디와 메일을 다시 입력해야함
