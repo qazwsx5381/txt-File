@@ -1,0 +1,27 @@
+0. 오타확인(보통 90% 해결가능)
+1. 모듈확인
+2. 방화벽 확인
+
+
+localhost = 127.0.0.1
+
+
+https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%A0%90%EC%8B%AC%EC%B6%94%EC%B2%9C
+
+https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=nodejs
+
+https://www.google.com/search?q=%EB%84%A4%EC%9D%B4%EB%B2%84&oq=%EB%84%A4%EC%9D%B4%EB%B2%84&aqs=chrome..69i57j69i61l3j5j69i65l3.5360j0j4&sourceid=chrome&ie=UTF-8
+
+?를 기준으로 뒤에는 query가 온다.
+
+
+get 방식 ( 요청해서 읽어옴, 주소에 보임 )
+? 뒤 주소에 쿼리를 포함시킴 
+1) queryString (
+=,& 기호 사용
+
+2) PATH
+: 기호 사용
+
+
+Post 방식
