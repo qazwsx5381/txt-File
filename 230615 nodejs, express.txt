@@ -25,3 +25,6 @@ get 방식 ( 요청해서 읽어옴, 주소에 보임 )
 
 
 Post 방식
+formData
+
+html form태그에 method="post" 넣어줘야 사용 가능!
