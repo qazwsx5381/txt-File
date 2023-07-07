@@ -1,0 +1,25 @@
+npm 사용해야할 것!
+
+axios
+
+mongoose
+
+cheerio
+
+morgan
+
+fast-xml-parser
+
+socket.io / socket.io-client
+
+dotenv
+
+path
+
+multer
+
+request
+
+vue-geolocation-api
+
+html5로 제작된 페이지의 비보안 연결(http://) 에서의 geolacation api 사용하는 것을 지원하지 않음

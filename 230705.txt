@@ -1,0 +1,72 @@
+mongoDB 기본 포트 : 27017
+
+use 데이터베이스 이름
+#collection이 만들어져야 데이터베이스 생성됨.
+
+show dbs : 데이터베이스 목록 확인
+
+d01
+
+계정생성
+use admin // admin DB로 진입
+
+db.createUser({user:'qazwsx5381',pwd:'1234',roles:['userAdminAnyDatabase'],mechanisms:['SCRAM-SHA-1']}) // 유저생성 user=아이디 / pwd=비밀번호 / "관리자권한"
+
+db.createUser({user:'YC',pwd:'1234',roles:['readWrite'],mechanisms:['SCRAM-SHA-1']}) // 유저생성 user=아이디 / pwd=비밀번호 / "일반유저"
+
+db.getUsers() // 사용자 확인
+db.dropUser('유저이름') // '유저이름' 삭제
+db.dropDatabase('DB이름') // 'DB' 삭제
+
+use d1에 들어가
+일반 유저를 만들고
+db.createCollection('crud') // 경로 생성
+
+※admin 안에서는 관리자만 만들어짐!!※
+
+db.crud.find() // 경로내 생성파일 찾기
+db.crud.find().pretty()
+
+db.crud.insertOne( { 추가하기 } )
+db.crud.insertMany
+
+db.crud.updateOne({age:{ $gt:50 }},{$set: {gender:'female'}})
+- {age:{ $gt:50 }} => 조건 / age가 50이상일경우
+- {$set: {gender:'female'}} => 수정할 부분
+
+db.crud.find({조건식},{__v:0,_id:1}) // 0: 숨기기, 1: 보여주기
+1로 설정된 객체값이 1개 이상 있을 경우 1로 설정된 객체만 보여줌
+__v:0 => mongoDB에서 자체적으로 설정해놓음, 다른 객체값이 하나라도 1로 설정되면 자동으로 숨겨짐
+_id:1 => 0으로 설정하지 않을 경우 항상 보임 ( 어떻게 설정하든 관계 없음 )
+
+EQ		=
+GT		>
+GTE ( GE )	>=
+LT		<
+LTE ( LE )		<=
+NE ( NEQ )	<>, !=
+
+and는 쉼표나 $and:
+or는 $or:
+
+
+Photo 콜렉션(tables)중 다음조건에 맞는 값만 find 하시오.
+1) id가 600에서 640사이의 값만 출력하세요.
+2) title이름의 마지막에 optio 가 들어가는 값만 출력하세요.
+3) id와 title과 thumbnailUrl 값만 출력하세요.
+4) 출력된 값의 갯수를 파악하세요. ( .count() )
+
+답
+1. db.photos.find({id:{$gte:600,$lte:640}}) / 41개
+2. db.photos.find({title:/optio$/}) / 19개
+3. db.photos.find({},{_id:0,id:1,title:1,thumbnailUrl:1}) / 5000개
+
+1,2,3의 조건을 합친것
+db.photos.find({id:{$gte:600,$lte:640},title:/optio$/},{_id:0,id:1,title:1,thumbnailUrl:1}) // 1개
+
+aggregate
+$match : 조건설정 // 마지막에 있을 경우 조건에 맞는 값을 보여줌
+$group : $match에 맞는 그룹을 새로운 키로 매핑해서 보여줌
+$sort : 정렬
+$limit : 갯수 제한
+$project : 프로젝트 내에 time 객체를 가진 data에서 minute 값을 추출
